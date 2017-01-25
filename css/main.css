@@ -4,40 +4,15 @@
 }
 
 .footer,
-.header,
-.contribute {
-  background: #CF4647;
-  color: #fff;
-}
-
-/* HEADER */
 .header {
-  display: flex;
-  flex-direction: column;
-  min-height: 800px;
-}
-
-.header > .container-lrg {
-  min-width: 90vw;
-}
-
-/*.footer,*/
-.header,
-.contribute {
   background: #CF4647;
-  color: #fff;
+  color: white;
 }
 
-/*.footer,*/
-.header,
-.contribute {
-  background: #CF4647;
-  color: #fff;
-}
-
-/*.ctas-button {
+.ctas-button {
   color: #CF4647;
-}*/
+}
+
 *,
 *:before,
 *:after {
@@ -45,16 +20,10 @@
   box-sizing: border-box;
 }
 
-
-html {
-  font-size: 62.5%;
-}
-
 body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -81,19 +50,11 @@ div.logo-cli {
   background-color: #002b36;
 }
 
-.logo-img-lg {
-  height: 255px;
-}
-
 /*text*/
 .heading {
   font-weight: 100;
   font-size: 50px;
   line-height: 68px;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 68px;
-  letter-spacing: 0.2em;
 }
 
 @media (max-width: 900px) {
@@ -117,10 +78,9 @@ div.logo-cli {
 }
 
 .paragraph {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
+  font-size: 17px;
   line-height: 32px;
+  font-weight: 100;
 }
 
 .heading + .paragraph {
@@ -167,6 +127,10 @@ p.paragraph {
   text-align: right;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -177,6 +141,7 @@ p.paragraph {
 .center,
 .right,
 .vertical,
+.horizontal,
 .aligncenter,
 .centervertical {
   display: flex;
@@ -210,6 +175,10 @@ p.paragraph {
 
 .vertical {
   flex-direction: column;
+}
+
+.horizontal {
+  flex-direction: row;
 }
 
 /*grid*/
@@ -347,7 +316,6 @@ p.paragraph {
 
 .ctas {
   margin: 40px 0 0 0;
-  text-align: center;
 }
 
 .centerdevices,
@@ -380,16 +348,20 @@ p.paragraph {
   height: 40px;
   line-height: 38px;
   padding: 0 30px;
-  font-size: 20px;
-  font-weight: 400;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
   letter-spacing: .3px;
+  border: 1px solid white;
   text-decoration: none;
-  border-radius: 15px;
-  background-color: #3A3E64;
 }
 
-.ctas-button--header {
-  width: 250px;
+.ctas-button-2 {
+  background: transparent;
+  color: white;
+  margin: 0 0 0 10px;
 }
 
 @media (max-width: 440px) {
@@ -407,10 +379,6 @@ p.paragraph {
 .whatisgulp {
   padding: 90px 0;
   background-color: #3A3E64;
-  /* hsl(234, 27%, 31%) */
-  /* purple */
-  /* hsl(234, 27%, 31%) */
-  /* purple */
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -435,9 +403,9 @@ p.paragraph {
 }
 
 .editor-window .editor-menubar {
-  display: flex;
   background-color: #E5E4E4;
   height: 50px;
+  display: flex;
   align-items: center;
   border-radius: 5px 5px 0 0;
 }
@@ -445,7 +413,6 @@ p.paragraph {
 .editor-window code,
 .editor-window code span {
   font-family: Menlo, 'DejaVu Sans Mono', 'Lucida Console', monospace;
-  font-weight: 600;
   font-size: 14pt;
 }
 
@@ -481,7 +448,6 @@ p.paragraph {
 
 .editor-menubar .close {
   background-color: red;
-  /*background-color: #CF4647;*/
   margin-left: 10px;
 }
 
@@ -520,20 +486,18 @@ p.paragraph {
   line-height: 38px;
   padding: 0 30px;
   background: #fff;
+  border-radius: 3px;
+  font-size: 15px;
   font-weight: 600;
+  text-transform: uppercase;
   letter-spacing: .3px;
+  border: 1px solid white;
   text-decoration: none;
-  font-size: 20px;
-  letter-spacing: .3px;
-  text-decoration: none;
-  border-radius: 15px;
-  background-color: #3A3E64;
-  color: #fff;
 }
 
 .ctas-button-2 {
   background: transparent;
-  color: #fff;
+  color: white;
   margin: 0 0 0 10px;
 }
 
@@ -549,89 +513,57 @@ p.paragraph {
   }
 }
 
-/* FOOTER */
 .footer {
   padding: 45px 0;
-  background-color: #CF4647;
-  color: #fff;
 }
 
-.footer .nav-link {
-  display: inline-block;
-  margin: 0 10px;
+.footer-nav {
+  margin-top: 45px;
 }
 
-.ctas-button--footer {
-  width: 285px;
-  height: 50px;
-  padding: 5px 5px;
-  font-size: 1em;
-  font-weight: 200;
-  text-align: center;
-  background-color: white;
-  color: #cf4444;
-}
-
-/*.ctas-button,
+.ctas-button,
 .ctas-button-2 {
   display: inline-block;
   height: 40px;
-  width: 250px;
   line-height: 38px;
   padding: 0 30px;
-  font-size: 20px;
-  font-weight: 400;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.3px;*/
-/*border: 1px solid #fff;
+  letter-spacing: .3px;
+  border: 1px solid white;
   text-decoration: none;
-  background-color: #3A3E64;
-  border-radius: 15px;
-  color: #fff;
-}*/
-/*.ctas-button-2 {
+}
+
+.ctas-button-2 {
   background: transparent;
-  color: #fff;
+  color: white;
   margin: 0 0 0 10px;
-}*/
+}
+
 @media (max-width: 440px) {
   .ctas-button,
   .ctas-button-2 {
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
   }
   .ctas-button-2 {
     margin: 10px 0 0 0;
   }
-  .ctas-button--footer {
-    width: 55vw;
-    height: 100%;
-    font-size: 0.8em;
-    padding: 0 0;
-  }
 }
 
-.contribute {
-  padding-top: 40px;
+.footer .paragraph {
+  color: inherit;
 }
 
-.contribute-copy {
-  margin-left: 25px;
-  text-align: left;
+.footer .ctas-button {
+  margin-top: 20px;
 }
 
-.contribute-item {
-  margin-bottom: 15px;
-}
-
-/* FEAUTURE */
 .feature3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  min-height: 1000px;
   padding: 90px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -641,35 +573,13 @@ p.paragraph {
   color: black;
 }
 
-.feature3 > .container-lrg {
-  min-width: 90vw;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-
-.feature3 .heading {
-  color: #CF4647;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.feature3 .subheading {
-  text-transform: uppercase;
-}
-
-.baseline > .col-4:nth-child(odd) {
-  flex-basis: 35%;
-  margin-bottom: 3rem;
-}
-
 @media (max-width: 750px) {
   .feature3 .flex {
     flex-wrap: wrap;
   }
-  .feature3 .col-4:nth-of-type(odd) {
+  .feature3 .col-4:nth-of-type(1) {
     width: 100%;
     margin-bottom: 30px;
-    flex-basis: unset;
   }
   .feature3 .col-4:not(:nth-of-type(1)) {
     width: 50%;
@@ -684,7 +594,6 @@ p.paragraph {
     width: 100%;
     margin-top: 30px;
   }
-  .feature3 .heading {
-    margin-bottom: 3rem;
-  }
 }
+
+/*# sourceMappingURL=map/main.css.map */
