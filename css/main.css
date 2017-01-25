@@ -563,6 +563,14 @@ p.paragraph {
   margin-top: 20px;
 }
 
+.footer .paragraph {
+  color: inherit;
+}
+
+.footer .ctas-button {
+  margin-top: 20px;
+}
+
 .feature3 {
   padding: 90px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -595,5 +603,7 @@ p.paragraph {
     margin-top: 30px;
   }
 }
+
+/*# sourceMappingURL=map/main.css.map */
 
 /*# sourceMappingURL=map/main.css.map */
